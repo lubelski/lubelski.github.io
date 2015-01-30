@@ -1,7 +1,7 @@
-{div} = React.DOM
+{div, a} = React.DOM
 
 app.createView 'base',
   render: ->
     div className: 'base',
-      div className: 'contents',
+      a className: 'contents', href: '//twitter.com/@uiwill',
         'Hello'
