@@ -1,0 +1,34 @@
+{
+  "name": "lubelski.github.io",
+  "version": "0.0.1",
+  "homepage": "https://github.com/lubelski/lubelski.github.io",
+  "authors": [
+    "William Lubelski <will.lubelski@gmail.com>"
+  ],
+  "description": "experiments",
+  "main": "index.html",
+  "keywords": [
+    "experiments"
+  ],
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "pipeline": "~0.0.5",
+    "lodash": "~3.0.0",
+    "react": "~0.12.2",
+    "underscore.string": "~3.0.2",
+    "moment": "~2.9.0",
+    "chroma-js": "~0.6.1",
+    "font-awesome": "~4.3.0",
+    "firebase": "~2.1.2",
+    "ajx": "~1.0.0",
+    "jquery": "~2.1.3"
+  }
+}

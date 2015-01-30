@@ -1,0 +1,6 @@
+build/
+node_modules/
+bower_components/
+*.sublime-project
+
+.DS_Store

@@ -1,0 +1,30 @@
+.base{
+  text-align: center;
+  .abs-pos-fill();
+
+  background: url(../images/pond.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+
+
+  &:before{
+    content: '';
+    display: inline-block;
+    vertical-align: middle;
+    min-height: 100%;
+  }
+
+  .contents{
+    display: inline-block;
+    vertical-align: middle;
+    padding: 2.0rem 4.0rem;
+    border-radius: 1.0rem;
+    font-size: 6.0rem;
+    background-color: rgba(0,0,0,0.5);
+    color: white;
+  }
+
+}
+

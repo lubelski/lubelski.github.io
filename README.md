@@ -1,4 +1,4 @@
 lubelski.github.io
 ==================
 
-Editorialish Info Site
+Will's personal experiments site
