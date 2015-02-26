@@ -15,13 +15,19 @@ build = 'build'
 # - - - Build JS - - - #
 
 gulp.task 'build-js', ['clean-js'], ->
-  gulp.src [
-    'src/setup.coffee',
-    'src/actions/**/*.coffee',
-    'src/stores/**/*.coffee',
-    'src/views/**/*.coffee',
-    'src/mount.coffee'
-  ]
+  # gulp.src [
+  #   'src/setup.coffee',
+  #   'src/app/**/*Helper.coffee',
+  #   'src/app/**/*Helpers.coffee',
+  #   'src/app/**/*Action.coffee',
+  #   'src/app/**/*Actions.coffee',
+  #   'src/app/**/*Store.coffee',
+  #   'src/app/**/*Component.coffee'
+  #   'src/app/**/*View.coffee',
+  #   'src/app/**/*Page.coffee',
+  #   'src/mount.coffee'
+  # ]
+  gulp.src ['src/setup.coffee', 'src/app/**/*.coffee', 'src/mount.coffee']
     .pipe sourcemaps.init()
     .pipe coffee()
     .on 'error', gutil.log
@@ -34,10 +40,8 @@ gulp.task "clean-js", (cb) -> del(["./#{build}/main.js"], cb)
 # - - - Build CSS - - - #
 
 gulp.task 'build-css', ['clean-css'], ->
-  gulp.src [
-    './src/styles/basics.less',
-    './src/views/**/*.less'
-  ]
+
+  gulp.src ['src/styles/defaults.less', 'src/app/**/*.less']
     .pipe sourcemaps.init()
     .pipe insert.prepend "@import 'mixins';"
     .pipe less(paths:['./src/styles'])
